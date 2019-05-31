@@ -126,7 +126,7 @@ android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
             android:value="96572" />
         <meta-data
             android:name="com.paDGfonLEQ.CZVyKcbSdu130599.APIKEY"
-            android:value="CZVyKcbSdu130599*1358088386130599626" />
+            android:value="" />
 
         <activity
             android:name=".Activitys.GetGps"
