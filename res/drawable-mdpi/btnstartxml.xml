@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <bitmap android:src="@drawable/btnstop"
+          android:layout_marginLeft="73dp"
+          android:textColor="#00000000" />
+    </item>
+    <item android:state_checked="true">
+        <bitmap android:src="@drawable/btnstart"
+            android:layout_marginLeft="73dp"
+            android:textColor="#00000000"
+           />
+    </item>        
+</selector>

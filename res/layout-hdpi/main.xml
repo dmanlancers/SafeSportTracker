@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+   
+    android:id="@+id/widget58"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="@drawable/subtle"
+    android:gravity="top" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textAppearance="@android:style/TextAppearance.StatusBar.EventContent"
+        android:textSize="11dp" />
+
+    <RelativeLayout
+        android:id="@+id/tittle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/yelow2"
+        android:background="#0066ff" >
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/safe_sport_tracker"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yellow1"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tittle"
+        android:background="#FFFFFF" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text91"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/box6"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp" >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/ciclismo"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/imgBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/icon_bike_main"
+            android:contentDescription="@string/bike_icon"
+            android:focusable="false"
+            android:paddingBottom="7dp"
+            android:paddingTop="6dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/col1"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/box6"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp" >
+
+        <ImageButton
+            android:id="@+id/imgWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/icon_walk_main"
+            android:contentDescription="@string/walk_icon"
+            android:padding="2dp"
+            android:paddingBottom="1dp"
+            android:paddingTop="2dp" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/caminhada"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/col4"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/box6"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp" >
+
+        <ImageButton
+            android:id="@+id/ImgRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_run_main"
+            android:contentDescription="@string/run_icon" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/atletismo"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/col2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/box6"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/ImgSnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_snow_main"
+            android:contentDescription="@string/snow_icon" />
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/snowboard"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/col3"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/box6"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="6dp" >
+
+        <ImageButton
+            android:id="@+id/imgMountain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_mountain_main"
+            android:contentDescription="@string/mountain_icon" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/escalada"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/text91"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yellow1"
+        android:background="#0066ff" >
+
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:text="@string/escolha_uma_modalidade_"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/yelow2"
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF" >
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnMediaP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDef"
+        android:layout_alignBottom="@+id/btnDef"
+        android:layout_alignRight="@+id/col5"
+        android:background="@drawable/btnmedia_p" />
+
+    <Button
+        android:id="@+id/btnDef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnWifi"
+        android:layout_alignBottom="@+id/btnWifi"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btndefi" />
+
+    <Button
+        android:id="@+id/btnWifi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/col5"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btngps_wifi" />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+	
+	<string-array name="entries">
+		<item>"Einmal am Tag"</item>
+		<item>"Anfangs"</item>
+	</string-array>
+	
+	<string-array name="values">
+		<item>"umpordia"</item>
+		<item>"noinicio"</item>
+	</string-array>
+	
+	<string-array name="entries1">
+	    <item>"Meilen"</item>
+	    <item>"Kilometer"</item>
+	</string-array>
+	
+	<string-array name="values1">
+	    <item>"M"</item>
+	    <item>"Km"</item>
+	</string-array>
+</resources>

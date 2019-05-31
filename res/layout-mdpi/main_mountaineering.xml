@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/subtle"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/col2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/col1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box6"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/leg_txt_col2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/velocidade_m_x_"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+        <TextView
+            android:id="@+id/txtSpeed_Max"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/box3"
+            android:textColor="#ff000000"
+            android:textSize="40sp"
+         />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/widget408"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box6"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/leg_txt_col1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+           
+            android:text="@string/velocidade_atual_"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            
+            android:id="@+id/txtSpeed"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/box3"
+            android:textColor="#ff000000"
+            android:textSize="40sp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/col2"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box6"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+         >
+
+        <TextView
+            android:id="@+id/leg_txt_col4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/velocidade_m_dia_"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAvg_Speed"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/box3"
+            android:textColor="#ff000000"
+            android:textSize="40sp"
+          />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/col3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/col4"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/col4"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/box6"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+         >
+
+        <TextView
+            android:id="@+id/leg_txt_col3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/total_dist_ncia_"
+            android:textColor="#ffffffff"
+            android:textSize="15sp"
+             />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/box3"
+            android:textColor="#ff000000"
+            android:textSize="40sp"
+          /> 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cron"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="18dp"
+        android:background="@drawable/box2" >
+
+        <Chronometer
+            android:id="@+id/croCorrer"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/box6"
+            android:gravity="center_vertical|center_horizontal"
+        
+            android:textStyle="bold"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/yellow_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/cron"
+        android:layout_marginTop="5dp"
+        android:background="#55575B" >
+
+        <TextView
+            android:id="@+id/txt_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/escalada"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/cam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/widget408"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btncam"
+        android:contentDescription="@string/icon_cam" />
+
+    
+    <RelativeLayout
+        android:id="@+id/widget408"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/col1"
+        android:layout_alignRight="@+id/col1"
+        android:layout_below="@+id/yellow_bar"
+        android:background="@drawable/box6"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/txtAltitude"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/leg_alt"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/box3"
+            android:gravity="center"
+            android:textColor="#ff000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAlt_Gain"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/leg_alt"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/box3"
+            android:gravity="center"
+            android:textColor="#ff000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/leg_alt_g"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtAlt_Gain"
+            android:layout_alignLeft="@+id/txtAlt_Gain"
+            android:gravity="center"
+            android:text="@string/altganha_m"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/leg_alt"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/altitude_m"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yellow_bar"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/icon_mountain"
+        android:contentDescription="@string/atletismo" />
+
+    <ImageButton
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/col3"
+        android:layout_toLeftOf="@+id/cam"
+        android:background="@drawable/facebook"
+        android:contentDescription="@string/icon_facebook" />
+
+    <ToggleButton
+        android:id="@+id/buttonOnOff"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignRight="@+id/logo"
+        android:layout_alignTop="@+id/facebook"
+        android:background="@drawable/btnstartxml"
+        android:textColor="#00000000" />
+   <com.google.ads.AdView  android:id="@+id/adView"
+android:layout_width="320dp"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" 
+ads:adUnitId="40c1f2583dd94776"
+ads:adSize="BANNER"
+ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID"
+ads:loadAdOnCreate="true"/>
+
+
+</RelativeLayout>

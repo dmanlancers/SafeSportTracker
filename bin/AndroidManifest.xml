@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dmanlancers.safesporttracker"
+    android:versionCode="9"
+    android:versionName="1.3" >
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+
+    <application
+        android:icon="@drawable/iconapp"
+        android:label="@string/settings_screen_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="audio/*" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:configChanges="keyboard|keyboardHidden|orientation"
+android:name="com.appbrain.AppBrainActivity" />
+<service android:name="com.appbrain.AppBrainService" />
+<receiver android:exported="true" android:name="com.appbrain.ReferrerReceiver" >
+<intent-filter>
+<action android:name="com.android.vending.INSTALL_REFERRER" />
+</intent-filter>
+</receiver>
+        <activity
+            android:name=".GpsServices.Alerta_GPS"
+            android:label="@string/hello"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".GpsServices.DefGps"
+            android:label="@string/settings_screen_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activitys.Timers"
+            android:label="@string/settings_screen_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        
+       
+<activity android:name="com.mobclix.android.sdk.MobclixBrowserActivity"
+android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="com.mopub.mobileads.MraidBrowser"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".GpsServices.GPSdata"
+            android:label="@string/settings_screen_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GpsServices.ServLogGps"
+            android:label="@string/settings_screen_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GpsServices.Utilities"
+            android:label="@string/settings_screen_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activitys.Bike"
+            android:label="@string/settings_screen_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.inmobi.androidsdk.IMBrowserActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        
+        <activity
+		android:name="com.adsdk.sdk.banner.InAppWebView"
+		android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+	<activity
+		android:name="com.adsdk.sdk.mraid.MraidActivity"
+		android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+	<activity
+		android:name="com.adsdk.sdk.video.RichMediaActivity"
+		android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+		android:hardwareAccelerated="false" />
+        
+        <activity
+            android:name="com.millennialmedia.android.MMActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.millennialmedia.android.VideoPlayer"
+            android:configChanges="keyboardHidden|orientation|keyboard" >
+        </activity>
+
+        <meta-data
+            android:name="com.paDGfonLEQ.CZVyKcbSdu130599.APPID"
+            android:value="96572" />
+        <meta-data
+            android:name="com.paDGfonLEQ.CZVyKcbSdu130599.APIKEY"
+            android:value="CZVyKcbSdu130599*1358088386130599626" />
+
+        <activity
+            android:name=".Activitys.GetGps"
+            android:label="@string/settings_screen_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+
+        <service
+            android:name="com.paDGfonLEQ.CZVyKcbSdu130599.PushService"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.paDGfonLEQ.CZVyKcbSdu130599.BootReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.paDGfonLEQ.CZVyKcbSdu130599.OptinActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity
+            android:name="com.paDGfonLEQ.CZVyKcbSdu130599.SmartWallActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.adsdk.sdk.banner.InAppWebView"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name="com.adsdk.sdk.mraid.MraidActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".Activitys.Run"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activitys.SnowBoard"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activitys.Walk"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Activitys.Mountaineering"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Maps.Maps"
+            android:label="@string/settings_screen_name" >
+        </activity>
+        <activity android:name="com.dmanlancers.safesporttracker.googleplay.library.Maps.Maps" />
+        <activity
+            android:name=".Maps.Position"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".Activitys.About"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".facebook.InitialSnowPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".facebook.FinalSnowPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".facebook.InitialRunPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".facebook.FinalRunPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent" >
+        </activity>
+        <activity
+            android:name=".facebook.InitialMountainPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".facebook.FinalMountainPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".facebook.InitialWalkPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".facebook.FinalWalkPost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".facebook.InitialBikePost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity android:name="com.mobfox.sdk.InAppWebView" />
+
+        <!-- following is optional for full video ads -->
+        <activity
+            android:name="com.mobfox.video.sdk.MobFoxRichMediaActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+        <activity
+            android:name=".facebook.FinalBikePost"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:name=".Activitys.Mapas"
+            android:label="@string/settings_screen_name"
+            android:launchMode="singleTask" >
+        </activity>
+        <!-- AppBrain SDK -->
+        <activity
+            android:name="com.appbrain.AppBrainActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation" />
+
+        <service android:name="com.appbrain.AppBrainService" />
+
+        <receiver
+            android:name="com.appbrain.ReferrerReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+         <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+  
+        
+
+        <meta-data android:name="com.mobclix.APPLICATION_ID" android:value="E4E9D0E7-46C3-43C5-B51C-DEBB1BC211C4"/>     <!-- "E4E9D0E7-46C3-43C5-B51C-DEBB1BC211C4" -->  <!-- "E3EDAB02B-0A74-4A90-B02E-2A8B466E397D" -->
+   
+   <meta-data android:name="ADMOB_PUBLISHER_ID"  android:value="40c1f2583dd94776" />
+      <meta-data																															
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDqLLds0R0sW6XsoBKp9rX0ztYv1gBYVvo" />
+      <receiver android:name="com.Leadbolt.AdNotification" /> 
+      
+      <receiver android:name="net.kivalin.wallpapers.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.Leadbolt.AdNotification" />
+   
+
+      
+    </application>
+     
+ 
+ 
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.dmanlancers.safesporttracker.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.dmanlancers.safesporttracker.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:label="your tests label"
+        android:targetPackage="com.dmanlancers.safesporttracker" />
+    <!-- Permissions for uploading tracks -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.local" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.wise" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.writely" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-library android:name="android.test.runner" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+</manifest>

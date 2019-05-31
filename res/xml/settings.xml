@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="Safe Sport Tracking_preferences">
+	
+	<Preference android:title="@string/abilitar_desabilitar_gps"
+		android:summary="@string/descricao_gps" 
+		android:key="enableDisableGps" />
+
+	<CheckBoxPreference android:key="log_gpx"
+		android:title="@string/gravar_ficheiro_gpx"
+		android:summary="@string/criar_ficheiro_gpx" />
+	
+	<CheckBoxPreference android:key="log_kml" android:defaultValue="true"
+		android:summary="@string/criar_ficheiro_kml"
+		android:title="@string/gravar_ficheiro_kml" />
+
+	<EditTextPreference android:key="distance_before_logging"
+		android:title="@string/distancia_log"
+		android:summary="@string/valor_distancia"
+		android:dialogTitle="@string/distancia_metros" android:numeric="integer" android:defaultValue="0"
+		android:maxLength="4" android:hint="@string/inserir_distancia" />
+	
+	<EditTextPreference android:key="time_before_logging"
+		android:title="@string/tempo_log"
+		android:summary="@string/numero_segundos"
+		android:dialogTitle="@string/tempo_segundos" android:numeric="integer" android:defaultValue="0"
+		android:maxLength="4" android:hint="@string/inserir_segundos" />
+	
+	<ListPreference android:title="@string/criar_ficheiro"
+		android:summary="@string/permite_criar" android:defaultValue="noinicio"
+		android:key="new_file_creation" android:entries="@array/entries"
+		 android:entryValues="@array/values" />
+	
+	<ListPreference android:title="@string/unidades_distancia"
+		android:summary="@string/selecionar"
+		android:key="m_k" android:entries="@array/entries1"
+		android:defaultValue="Km" android:entryValues="@array/values1" /> 
+
+
+</PreferenceScreen>

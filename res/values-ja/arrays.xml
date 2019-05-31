@@ -1,0 +1,22 @@
+<resources>
+	
+	<string-array name="entries">
+		<item>"1日1回"</item>
+		<item>"初めに"</item>
+	</string-array>
+	
+	<string-array name="values">
+		<item>"umpordia"</item>
+		<item>"noinicio"</item>
+	</string-array>
+	
+	<string-array name="entries1">
+	    <item>"マイル"</item>
+	    <item>"キロメートル"</item>
+	</string-array>
+	
+	<string-array name="values1">
+	    <item>"M"</item>
+	    <item>"Km"</item>
+	</string-array>
+</resources>

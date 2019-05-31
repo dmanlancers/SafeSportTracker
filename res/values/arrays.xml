@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="entries">
+		<item>Once a day</item>
+		<item>At the beginning</item>
+
+	</string-array>
+
+	<string-array name="values">
+		<item>umpordia</item>
+		<item>noinicio</item>
+
+	</string-array>
+	<string-array name="entries1">
+		<item>Miles</item>
+		<item>Kilometers</item>
+
+	</string-array>
+	<string-array name="values1">
+		<item>M</item>
+		<item>Km</item>
+
+	</string-array>
+
+</resources> 

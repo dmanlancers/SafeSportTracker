@@ -1,0 +1,22 @@
+<resources>
+	
+	<string-array name="entries">
+		<item>"一天一次"</item>
+		<item>"创世之初 冥冥之中"</item>
+	</string-array>
+	
+	<string-array name="values">
+		<item>"umpordia"</item>
+		<item>"noinicio"</item>
+	</string-array>
+	
+	<string-array name="entries1">
+	    <item>"万里"</item>
+	    <item>"公里"</item>
+	</string-array>
+	
+	<string-array name="values1">
+	    <item>"M"</item>
+	    <item>"Km"</item>
+	</string-array>
+</resources>
